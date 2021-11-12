@@ -1,0 +1,64 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:darksalmon;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+}
+
+#app{
+  padding-top: 50px;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#app h1{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.box{
+  background-color: rgba(241, 189, 171, 0.753);
+  padding: 50px;
+  border-radius: 15px;
+}
+
+ul{
+  list-style: none;
+}
+
+ul li{
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  border-bottom: 1px solid rgb(189, 122, 100);
+  padding: 5px 10px 10px 10px;
+}
+ul li:last-child{
+  border-bottom: none;
+}
+
+ul li:hover{
+  cursor: pointer;
+}
+
+
+ul li i{
+  color: white;
+  transition: all .5s;
+}
+ul li i:hover{
+  color: rgb(233, 87, 87);
+  cursor: pointer;
+}
+
+.linethrough{
+  text-decoration: line-through;
+  color: gainsboro;
+}
