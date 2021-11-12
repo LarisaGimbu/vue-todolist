@@ -34,11 +34,7 @@ const app = new Vue({
         done: false,
       },
     ],
-    newToDo:
-    {
-      text:'',
-      done: false,
-    },
+    newToDo:'',
     error: false,
   },
 
@@ -49,14 +45,17 @@ const app = new Vue({
     },
 
     insertToDo(){
-      if(this.newToDo.text.length<3){
+      if(this.newToDo.length<3){
         this.error= true;
         setTimeout(()=>{
           this.error= false;
         }, 3000)
       }else{
-        this.toDoList.push(this.newToDo);
-        // this.newToDo.text='';
+        this.toDoList.push({
+          text : this.newToDo,
+          done: false,
+        });
+        this.newToDo='';
         console.log(this.toDoList);
       }
     }
