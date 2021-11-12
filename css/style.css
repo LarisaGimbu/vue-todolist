@@ -23,10 +23,49 @@ body{
   margin-bottom: 50px;
 }
 
+#app input{
+  width: 80%;
+  line-height: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgba(255, 198, 179, 0.61);;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.541);
+  transition: all .5s;
+  margin-bottom: 30px;
+}
+#app input:hover, #app button:hover{
+  background-color: white;
+}
+
+#app button{
+  line-height: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgba(255, 198, 179, 0.61);;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.541);
+  transition: all .5s;
+  margin-bottom: 30px;
+  color: rgba(77, 70, 70, 0.877);
+}
+#app button:hover{
+  cursor: pointer;
+}
+
 .box{
-  background-color: rgba(241, 189, 171, 0.753);
+  line-height: 20px;
   padding: 50px;
-  border-radius: 15px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgba(255, 198, 179, 0.61);;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.541);
+  transition: all .5s;
+  margin-bottom: 30px;
+  color: rgba(77, 70, 70, 0.877);
+}
+.box:hover{
+  background-color: rgba(255, 255, 255, 0.404);
 }
 
 ul{
@@ -39,6 +78,7 @@ ul li{
   height: 30px;
   border-bottom: 1px solid rgb(189, 122, 100);
   padding: 5px 10px 10px 10px;
+  color: rgba(77, 70, 70, 0.877);
 }
 ul li:last-child{
   border-bottom: none;
@@ -52,6 +92,7 @@ ul li:hover{
 ul li i{
   color: white;
   transition: all .5s;
+  text-shadow: 0 1px 1px rgba(77, 70, 70, 0.877);
 }
 ul li i:hover{
   color: rgb(233, 87, 87);
@@ -60,5 +101,5 @@ ul li i:hover{
 
 .linethrough{
   text-decoration: line-through;
-  color: gainsboro;
+  color: rgba(141, 74, 67, 0.781);
 }
